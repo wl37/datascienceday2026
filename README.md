@@ -8,10 +8,10 @@ Each notebook is self-contained works in **JupyterLab**
 
 | # | Topic | Concepts |
 |---|-------|----------|
-| 01 | Monty Hall Problem | Probability, simulation, counter-intuition |
-| 02 | Birthday Paradox | Combinatorics, probability curves |
-| 03 | Titanic Survival | Data exploration, decision trees, ML |
-| 04 | Word Embeddings | NLP, vectors, cosine similarity, PCA |
+| 01 | Monty Hall Problem | Probability, simulation|
+| 02 | Birthday Paradox | Combinatorics, probability|
+| 03 | Titanic Survival | Data exploration, ML |
+| 04 | Word Embeddings | vectors, cosine similarity, PCA |
 
 ---
 
@@ -59,16 +59,3 @@ uv run jupyter lab
 ```
 
 Open any notebook from the `notebooks/` folder in the browser that opens.
-
----
-
-## Dependencies
-
-| Package | Purpose |
-|---------|---------|
-| jupyterlab | Development / code walkthrough |
-| pandas, numpy | Data manipulation |
-| matplotlib, seaborn | Visualization |
-| scikit-learn | Decision tree, PCA |
-| ipywidgets | Interactive sliders, dropdowns, buttons |
-| pillow | Image support |
