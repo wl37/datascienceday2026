@@ -8,3 +8,7 @@ wheels/
 
 # Virtual environments
 .venv
+
+# model files
+data/wiki-news-300d-1M.vec
+data/wiki-news-300d-1M.vec.zip
