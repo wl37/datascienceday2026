@@ -9,6 +9,9 @@ wheels/
 # Virtual environments
 .venv
 
+# ipynb checkpoints
+notebooks/.ipynb_checkpoints/
+
 # model files
 data/wiki-news-300d-1M.vec
 data/wiki-news-300d-1M.vec.zip
