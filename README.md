@@ -21,8 +21,9 @@ Each notebook is self-contained works in **JupyterLab**
 DataScienceDay2026/
 ├── .venv/               # Virtual environment (managed by uv)
 ├── data/
-│   ├── titanic.csv      # 891 Titanic passengers (from seaborn)
-│   └── glove_sample.csv # 80 words × 50-dim word vectors (8 semantic clusters)
+│   ├── titanic.csv              # 891 Titanic passengers (from seaborn)
+│   ├── wiki-news-300d-1M.vec    # FastText 300-dim word vectors (1M words)
+│   └── wiki-news-300d-1M.vec.zip
 ├── notebooks/
 │   ├── 01_monty_hall.ipynb
 │   ├── 02_birthday_paradox.ipynb
