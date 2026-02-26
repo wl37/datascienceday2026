@@ -12,6 +12,7 @@ Each notebook is self-contained works in **JupyterLab**
 | 02 | Birthday Paradox | Combinatorics, probability|
 | 03 | Titanic Survival | Data exploration, ML |
 | 04 | Word Embeddings | vectors, cosine similarity, PCA |
+| 05 | Marketing Campaign | Business framing, feature design, ML problem formulation |
 
 ---
 
@@ -28,7 +29,8 @@ DataScienceDay2026/
 │   ├── 01_monty_hall.ipynb
 │   ├── 02_birthday_paradox.ipynb
 │   ├── 03_titanic.ipynb
-│   └── 04_word_embeddings.ipynb
+│   ├── 04_word_embeddings.ipynb
+│   └── 05_marketing_campaign.ipynb
 ├── pyproject.toml
 └── README.md
 ```
