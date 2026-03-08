@@ -339,10 +339,12 @@ dependencies = [
     { name = "ipywidgets" },
     { name = "jupyter" },
     { name = "jupyterlab" },
+    { name = "jupyterlab-rise" },
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "pandas" },
     { name = "pillow" },
+    { name = "rise" },
     { name = "scikit-learn" },
     { name = "seaborn" },
 ]
@@ -353,10 +355,12 @@ requires-dist = [
     { name = "ipywidgets", specifier = ">=8.1.8" },
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "jupyterlab", specifier = ">=4.5.4" },
+    { name = "jupyterlab-rise", specifier = ">=0.43.1" },
     { name = "matplotlib", specifier = ">=3.10.8" },
     { name = "numpy", specifier = ">=2.4.2" },
     { name = "pandas", specifier = ">=3.0.1" },
     { name = "pillow", specifier = ">=12.1.1" },
+    { name = "rise", specifier = ">=5.7.1" },
     { name = "scikit-learn", specifier = ">=1.8.0" },
     { name = "seaborn", specifier = ">=0.13.2" },
 ]
@@ -859,12 +863,35 @@ wheels = [
 ]
 
 [[package]]
+name = "jupyterlab-mathjax3"
+version = "4.3.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/e3/b6/18e44ef4ca8d74c7c239941c76acfd4b4127867893778ff4bd2691a6c9df/jupyterlab-mathjax3-4.3.0.tar.gz", hash = "sha256:daee13969453ecfa22ac8969cd1daa8f887731ace8adb93a574b47aecabdc5dd", size = 531559, upload-time = "2022-01-17T16:38:40.663Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/21/3f/9ac19d2883f58ba3ce14d34afcb993a6274154935b0bff4d75189b973d67/jupyterlab_mathjax3-4.3.0-py3-none-any.whl", hash = "sha256:07d2a40cea9293bb56210b87620088e6aa5bb45c05aac86d3e917d6c1aded711", size = 1061508, upload-time = "2022-01-17T16:38:26.488Z" },
+]
+
+[[package]]
 name = "jupyterlab-pygments"
 version = "0.3.0"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/90/51/9187be60d989df97f5f0aba133fa54e7300f17616e065d1ada7d7646b6d6/jupyterlab_pygments-0.3.0.tar.gz", hash = "sha256:721aca4d9029252b11cfa9d185e5b5af4d54772bb8072f9b7036f4170054d35d", size = 512900, upload-time = "2023-11-23T09:26:37.44Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b1/dd/ead9d8ea85bf202d90cc513b533f9c363121c7792674f78e0d8a854b63b4/jupyterlab_pygments-0.3.0-py3-none-any.whl", hash = "sha256:841a89020971da1d8693f1a99997aefc5dc424bb1b251fd6322462a1b8842780", size = 15884, upload-time = "2023-11-23T09:26:34.325Z" },
+]
+
+[[package]]
+name = "jupyterlab-rise"
+version = "0.43.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "jupyter-server" },
+    { name = "jupyterlab" },
+    { name = "jupyterlab-mathjax3" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d3/e4/5d94cfdb93a6f0f9707a5d988b294e4c62d7944e0c77dba3e1a6a3389521/jupyterlab_rise-0.43.1.tar.gz", hash = "sha256:264ec00e2cb5cc68e2042a054eea2d42925f47f36d883eba9c475b6dd2fe87d3", size = 31528296, upload-time = "2024-12-31T09:34:47.349Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5d/6b/ccc3f8d9940719b1d6c0c12aab9417d4008ff6aa419c8d103aa4c29ee3d1/jupyterlab_rise-0.43.1-py3-none-any.whl", hash = "sha256:62ba6d8c07a80dff293589512d57901029800a23a860904b14eb96d597cb8573", size = 16418327, upload-time = "2024-12-31T09:34:41.403Z" },
 ]
 
 [[package]]
@@ -1643,6 +1670,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/2c/06/37c1a5557acf449e8e406a830a05bf885ac47d33270aec454ef78675008d/rfc3987_syntax-1.1.0.tar.gz", hash = "sha256:717a62cbf33cffdd16dfa3a497d81ce48a660ea691b1ddd7be710c22f00b4a0d", size = 14239, upload-time = "2025-07-18T01:05:05.015Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/7e/71/44ce230e1b7fadd372515a97e32a83011f906ddded8d03e3c6aafbdedbb7/rfc3987_syntax-1.1.0-py3-none-any.whl", hash = "sha256:6c3d97604e4c5ce9f714898e05401a0445a641cfa276432b0a648c80856f6a3f", size = 8046, upload-time = "2025-07-18T01:05:03.843Z" },
+]
+
+[[package]]
+name = "rise"
+version = "5.7.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "notebook" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ec/7a/e6d1796af9c1bd30694341ea169c19a7a63a6cfd71d001712a339beaa4c3/rise-5.7.1.tar.gz", hash = "sha256:641db777cb907bf5e6dc053098d7fd213813fa9a946542e52b900eb7095289a6", size = 2059578, upload-time = "2020-10-29T01:31:25.915Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b9/e7/91ddb742829723d9746dc12c5c5d0511d34d6c8e378fa2bdf1e17c68a3d7/rise-5.7.1-py2.py3-none-any.whl", hash = "sha256:df8ce9f0e575d334b27ff40a1f91a4c78d9f7b4995858bb81185ceeaf98eae3a", size = 4276769, upload-time = "2020-10-29T01:31:20.223Z" },
 ]
 
 [[package]]
